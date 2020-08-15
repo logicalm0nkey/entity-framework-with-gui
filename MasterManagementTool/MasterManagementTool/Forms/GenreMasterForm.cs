@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MasterManagementTool
+namespace MasterManagementTool.Forms
 {
     public partial class GenreMasterForm : Form
     {

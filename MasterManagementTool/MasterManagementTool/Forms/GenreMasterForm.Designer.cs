@@ -1,4 +1,4 @@
-﻿namespace MasterManagementTool
+﻿namespace MasterManagementTool.Forms
 {
     partial class GenreMasterForm
     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,8 @@ using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MasterManagementTool.Data;
+using Microsoft.Data.SqlClient;
 
 namespace MasterManagementTool.Forms
 {

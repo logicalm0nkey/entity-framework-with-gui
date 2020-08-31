@@ -83,6 +83,7 @@
             this.RegisterButton.TabIndex = 2;
             this.RegisterButton.Text = "登録";
             this.RegisterButton.UseVisualStyleBackColor = true;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // NameTextBoxOfRegister
             // 
@@ -123,6 +124,7 @@
             this.IdComboBoxOfUpdate.Name = "IdComboBoxOfUpdate";
             this.IdComboBoxOfUpdate.Size = new System.Drawing.Size(200, 23);
             this.IdComboBoxOfUpdate.TabIndex = 3;
+            this.IdComboBoxOfUpdate.SelectedIndexChanged += new System.EventHandler(this.IdComboBoxOfUpdate_SelectedIndexChanged);
             // 
             // IdLabelOfUpdate
             // 
@@ -157,6 +159,7 @@
             this.UpdateButton.TabIndex = 5;
             this.UpdateButton.Text = "更新";
             this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // DeleteTab
             // 
@@ -181,6 +184,7 @@
             this.DeleteButton.TabIndex = 8;
             this.DeleteButton.Text = "削除";
             this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // NameTextBoxOfDelete
             // 
@@ -207,6 +211,7 @@
             this.IdComboBoxOfDelete.Name = "IdComboBoxOfDelete";
             this.IdComboBoxOfDelete.Size = new System.Drawing.Size(200, 23);
             this.IdComboBoxOfDelete.TabIndex = 6;
+            this.IdComboBoxOfDelete.SelectedIndexChanged += new System.EventHandler(this.IdComboBoxOfDelete_SelectedIndexChanged);
             // 
             // IdLabelOfDelete
             // 

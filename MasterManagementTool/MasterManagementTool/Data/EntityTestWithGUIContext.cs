@@ -15,6 +15,7 @@ namespace MasterManagementTool.Data
         { }
 
         public DbSet<Author> Authors { get; set; }
+        public DbSet<Genre> Genres { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -33,9 +33,9 @@ namespace MasterManagementTool.Forms
             {
                 // 著者データを取得
                 _authors = context.Authors.Where(author => author.Deleted == false).ToList();
-
-                UpdateCombobox();
             }
+
+            UpdateCombobox();
         }
 
         private void RegisterButton_Click(object sender, EventArgs e)
@@ -74,14 +74,14 @@ namespace MasterManagementTool.Forms
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             // 選択された ID の著者を取得
-            var author = _authors.Single(
+            var selectedAuthor = _authors.Single(
                 author => author.ID == Convert.ToInt32(IdComboBoxOfUpdate.SelectedItem));
 
             using (var context = new EntityTestWithGUIContext())
             {
                 // 著者名の変更
-                context.Authors.Attach(author);
-                author.Name = NameTextBoxOfUpdate.Text;
+                context.Authors.Attach(selectedAuthor);
+                selectedAuthor.Name = NameTextBoxOfUpdate.Text;
                 context.SaveChanges();
 
                 // 著者データを取得
